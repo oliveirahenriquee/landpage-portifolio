@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 20px;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #388a9e; 
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.btn-voltar:hover {
+    color: #00bcd4;
+    transform: translateX(-5px); 
+}
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+#rotina-semanal {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#rotina-semanal th, #rotina-semanal td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#rotina-semanal th {
+    background-color: #388a9e;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#rotina-semanal tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#rotina-semanal td:first-child {
+    background-color: #e0f2f1;
+    font-weight: bold;
+    color: #000000;
+}
+
+.tarefa-celula {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tarefa-celula:hover {
+    background-color: #c8e6c9;
+}
+
+.tarefa-celula.selecionada {
+    border: 3px dashed #23d4cc; 
+    box-shadow: 0 0 5px rgb(50, 53, 66);
+}
+
+.tarefa-celula.concluida {
+    background-color: #dcedc8 !important; 
+    text-decoration: line-through;       
+    color: #558b2f;                      
+    opacity: 0.8;
+}
+
+.adicionar-tarefa {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#nova-tarefa-input {
+    padding: 8px;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#salvar-tarefa-btn {
+    padding: 8px 15px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#salvar-tarefa-btn:hover {
+    background-color: #0097a7;
+}

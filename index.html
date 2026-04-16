@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Henrique Gonçalves</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <strong>Portfólio</strong>
+      <nav class="nav-links">
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+      <button id="themeToggle" class="btn-dashboard-style" aria-label="Alternar tema">Modo noturno</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content reveal">
+        <h1>Olá, eu sou o <span>Henrique Gonçalves</span></h1>
+        <p>Estudante de engenharia de software e apaixonado por front end e desenvolvimento de jogos. Fiz essa planilha para falar um pouco mais sobre mim e alguns projetos pessoais. </p>
+        <a href="#projects" class="btn">Ver projetos</a>
+      </div>
+    </section>
+
+    <section class="about reveal" id="about">
+      <div class="container">
+        <h2>Sobre mim</h2>
+          <br>
+        <p>
+          Me chamo Henrique, tenho 24 anos e atualmente curso graduação em engenharia de software pela Unicesumar e em paralelo faço o curso de engenheiro front-end através da EBAC. 
+          Desenvolvi essa landpage como forma de estudo e por em prática os conteúdos que tenho estudado. 
+          Ela utiliza HTML semântico, CSS e JavaScript para animações e interações simples. 
+        </p>
+      </div>
+    </section>
+
+    <section class="projects reveal" id="projects">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Projeto 01</h3>
+            <br>
+            <a href="dashboard.html">Dashboard digital.</a>
+          </article>
+          <article class="project-card">
+            <h3>Projeto 02</h3>
+            <br>
+            <a href="tabela.html" >Tabela interativa de rotina semanal.</a>
+          </article>
+          <article class="project-card">
+            <h3>Projeto 03</h3>
+            <br>
+            <a href="formulario.html">Formulário de gastos.</a>
+          </article>
+        </div>
+
+        <div class="projects-details" style="margin-top: 3rem;">
+          <h2>Abaixo irei falar um pouco mais sobre cada projeto.</h2>
+              <br>
+          <article>
+            <h3>Dashboard digital</h3>
+              <br>
+            <p>A Dashboard servirá como uma forma de gráfico para mostrar a produtividade do usuário, contendo informações como tarefas diárias, rotina de estudos, alimentação e exercícios físicos.</p>
+          </article>
+              <br>
+          <article>
+            <h3>Tabela interativa de rotina semanal</h3>
+              <br>
+            <p>Tabela com todos os dias da semana e horários de preferência do usuário, cada célula é editável para que as informações sejam inseridas, editadas ou excluídas, contendo botões para salvar alterações, inserir informações e excluir dados.</p>
+          </article>
+              <br>
+          <article>
+            <h3>Formulário de cadastro.</h3>
+            <br>
+            <p>Sistema simples de cadastro com dados pessoais e caixa de mensagens para descrição ou sugestões.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact reveal" id="contact">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Quer conversar ou ver mais do meu trabalho?</p>
+        
+        <form action="processa_formulario.php" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="assunto">
+              <option value="Escolha">Escolha um</option>
+              <option value="Dúvidas">Dúvidas</option>
+              <option value="Sugestões">Sugestões</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="msg">Mensagem</label>
+            <br>
+            <textarea name="message" id="msg" cols="50" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+ <footer><p>&copy;2026 Henrique Gonçalves - Todos os direitos reservados</p>
+        <p>Conecte-se comigo</p>
+        <a href="">Linkedin</a> |
+        <a href="">Github</a>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

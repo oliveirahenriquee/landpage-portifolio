@@ -1,0 +1,42 @@
+!<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Rotina Semanal</title>
+    <link rel="stylesheet" href="tabela.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container">
+    <a href="index.html" class="btn-voltar">← Voltar para o Portfólio</a>
+        <h1>Minha Rotina Semanal</h1>
+        <table id="rotina-semanal">
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela">
+                </tbody>
+        </table>
+        
+        <div class="adicionar-tarefa">
+            <h2>Adicionar/Editar Tarefa</h2>
+            <p>Clique em uma célula (tarefa) para editá-la.</p>
+            <input type="text" id="nova-tarefa-input" placeholder="Nova tarefa">
+            <button id="salvar-tarefa-btn">Salvar</button>
+        </div>
+    </div>
+
+    <script src="tabela.js"></script>
+</body>
+</html>
